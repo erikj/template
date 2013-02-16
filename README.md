@@ -1,5 +1,9 @@
 # Rails app template:
 
+## Usage
+
+    % rails new APPNAME -m https://gist.github.com/erikj/4968893/raw/some-rails-template.rb
+
 ## Background
 
 - prior art / leverage (?) <https://github.com/cbetta/primo>
