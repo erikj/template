@@ -11,10 +11,12 @@
 
 ## Wishlist
 
-- Haml
-- Twitter bootstrap
-- Unicorn
+- X Haml
+- X Twitter bootstrap
+- X Unicorn
 - Procfile / Heroku ready (?)
+- (?) `.rvmrc`: `1.9.3-p358@APPNAME`
+
 
 ## TBD
 
