@@ -2,7 +2,12 @@
 
 gem 'unicorn'
 
-gem 'haml-rails'
+gem "haml"
+gem_group :development do
+  gem "haml-rails"
+end
+
+remove_file "app/views/layouts/application.html.erb"
 
 gem_group :assets do
   gem 'twitter-bootstrap-rails'
