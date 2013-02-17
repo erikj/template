@@ -1,38 +1,25 @@
-# Rails app template:
+# HAML-Bootstrap Template
+
+## About
+
+**HAML-Bootstrap Template** is a Ruby-on-Rails application template, for creating Ruby-on-Rail applications configured w/:
+
+- [HAML](http://haml.info/) markup language
+- [Twitter Bootstrap](http://twitter.github.com/bootstrap/)  CSS / JS framework
+- [Unicorn](http://unicorn.bogomips.org/) Rack HTTP server
 
 ## Usage
+
+Create a new Ruby-on-Rails application:
 
     % rails new APPNAME -m https://raw.github.com/erikj/haml-bootstrap-template/master/haml-bootstrap.rb
 
 ## Background
 
-- prior art / leverage (?) <https://github.com/cbetta/primo>
-- <http://guides.rubyonrails.org/rails_application_templates.html>
+- [**Ruby on Rails:** Web development that doesn't hurt](http://rubyonrails.org/)
+- [Rails Application Templates](http://guides.rubyonrails.org/rails_application_templates.html)
+- [**Primo:** A configurable default Rails stack](https://github.com/cbetta/primo)
 
-## Wishlist
+## License
 
-- X Haml
-  - X proper treatment, a la **primo**:
-- X Twitter bootstrap
-  - X run initial bootstrap commands
-- X Unicorn
-- foreman + Procfile / Heroku ready (?)
-- (?) `.rvmrc`: `1.9.3-p358@APPNAME`
-  - template options?
-    - <http://blog.madebydna.com/all/code/2010/10/11/cooking-up-a-custom-rails3-template.html>
-
-## TBD
-
-- name?
-  - `haml-tbs-unicorn`?
-- gist or git repo?
-- is there a way to pass options to the `rails new` command?
-  - want to emulate my `~/.railsrc`:
-
-    ```
-    # rails 3.2+ only
-    --skip-javascript
-    --skip-bundle
-    --skip-test-unit
-    --skip-git # no .gitkeeps!!!
-    ```
+**MIT [LICENSE](https://github.com/erikj/haml-bootstrap-template/blob/master/LICENSE)**
