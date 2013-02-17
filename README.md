@@ -2,7 +2,7 @@
 
 ## Usage
 
-    % rails new APPNAME -m https://gist.github.com/erikj/4968893/raw/some-rails-template.rb
+    % rails new APPNAME -m https://raw.github.com/erikj/haml-bootstrap-template/master/haml-bootstrap.rb
 
 ## Background
 
