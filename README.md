@@ -22,6 +22,18 @@ Create a new **Ruby-on-Rails** application composed w/ available template:
 
     % rails new APPNAME -m http://erikj.github.com/templates/stb.rb
 
+### Development
+
+The provided application templates are generated from a template via a [Thor](https://github.com/wycats/thor/wiki) task.
+
+To modify the provided application templates:
+
+- Edit template template as needed:
+  - `% emacs templates/template_template.erb`
+- Generate new template:
+  - Slim: `% thor template:create --force stb`
+  - Haml: `% thor template:create --force htb`
+
 ## Background
 
 - [**Ruby on Rails:** Web development that doesn't hurt](http://rubyonrails.org/)

@@ -1,13 +1,13 @@
 # Rails-Application Template composed of:
-# - haml
+# - <%= @templating_lib %>
 # - twitter-bootrap-rails
 # - unicorn
 
 gem 'unicorn'
 
-gem "haml"
+gem "<%= @templating_lib %>"
 gem_group :development do
-  gem "haml-rails"
+  gem "<%= @templating_lib %>-rails"
 end
 
 remove_file "app/views/layouts/application.html.erb"
