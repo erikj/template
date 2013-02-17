@@ -4,9 +4,9 @@
 
 **HAML-Bootstrap Template** is a Ruby-on-Rails application template, for creating Ruby-on-Rail applications configured w/:
 
-- [HAML](http://haml.info/) markup language
-- [Twitter Bootstrap](http://twitter.github.com/bootstrap/)  CSS / JS framework
-- [Unicorn](http://unicorn.bogomips.org/) Rack HTTP server
+- [**HAML**](http://haml.info/) markup language
+- [**Twitter Bootstrap**](http://twitter.github.com/bootstrap/)  CSS / JS framework
+- [**Unicorn**](http://unicorn.bogomips.org/) Rack HTTP server
 
 ## Usage
 
