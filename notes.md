@@ -27,5 +27,6 @@
     - **nein!!!** :(
       > redirection forbidden: http://git.io/xoLBxQ -> https://raw.github.com/erikj/haml-bootstrap-template/master/haml-bootstrap.rb (RuntimeError)
   - gh-pages?
-    - `http://erikj.github.com/haml-bootstrap`
-    - how to keep in sync / updated?
+    - rename repo: `hamltbs`
+    - `http://erikj.github.com/hamltbs/t.rb`
+    - switch default branch from `master` to `gh-pages`
