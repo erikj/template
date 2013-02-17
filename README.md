@@ -4,15 +4,23 @@
 
 **Templates** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
 
-- [**HAML**](http://haml.info/) markup language
+- markup language:
+  - [**Haml**](http://haml.info/)
+  - [**Slim**](http://slim-lang.com/)
 - [**Twitter Bootstrap for Rails 3.1 Asset Pipeline**](https://github.com/seyhunak/twitter-bootstrap-rails)
 - [**Unicorn**](http://unicorn.bogomips.org/) Rack HTTP server
 
 ## Usage
 
-Create a new **Ruby-on-Rails** application and apply this template:
+Create a new **Ruby-on-Rails** application composed w/ available template:
+
+### Haml Twitter Bootstrap
 
     % rails new APPNAME -m http://erikj.github.com/templates/htb.rb
+
+### Slim Twitter Bootstrap
+
+    % rails new APPNAME -m http://erikj.github.com/templates/stb.rb
 
 ## Background
 
