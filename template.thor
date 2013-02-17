@@ -6,9 +6,10 @@ class Template < Thor
   def create name
 
     if name != 'templates' and (name=='stb' or name=='htb')
+      dest_file = "#{name}.rb"
       @templating_lib = name=='stb' ? 'slim' : 'haml'
-      puts "Creating app template #{name}.rb"
-      template File.join(%w(templates template_template.erb)), "#{name}.rb", options
+      puts "Creating app template #{dest_file}"
+      template File.join(%w(templates template_template.erb)), dest_file, options
     else
       puts "Invalid template specified: #{name}"
     end
