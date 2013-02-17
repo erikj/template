@@ -12,7 +12,7 @@
 
 Create a new Ruby-on-Rails application:
 
-    % rails new APPNAME -m https://raw.github.com/erikj/haml-bootstrap-template/master/haml-bootstrap.rb
+    % rails new APPNAME -m http://erikj.github.com/hamltbs/template.rb
 
 ## Background
 
@@ -23,4 +23,4 @@ Create a new Ruby-on-Rails application:
 
 ## License
 
-**MIT [LICENSE](https://github.com/erikj/haml-bootstrap-template/blob/master/LICENSE)**
+**MIT [LICENSE](https://github.com/erikj/hamltbs/blob/gh-pages/LICENSE)**
