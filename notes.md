@@ -11,6 +11,19 @@
 - (?) `.rvmrc`: `1.9.3-p358@APPNAME`
   - template options?
     - <http://blog.madebydna.com/all/code/2010/10/11/cooking-up-a-custom-rails3-template.html>
+- output information on app creation:
+  - links to:
+    - haml.info
+    - twitter bootstrap / -rails & railscast
+- git:
+  - `.gitignore`
+    - <https://github.com/github/gitignore/blob/master/Rails.gitignore>
+  - `.gitignore`s in proper directories:
+    - `log/`
+  - `git init .`
+  - `git add .`
+  - `git commit -m 'initializing new Rails application'`
+
 
 ## TBD
 
