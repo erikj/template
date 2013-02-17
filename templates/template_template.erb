@@ -1,13 +1,13 @@
 # Rails-Application Template composed of:
-# - <%= @templating_lib %>
+# - <%= @markup_lib %>
 # - twitter-bootrap-rails
 # - unicorn
 
 gem 'unicorn'
 
-gem "<%= @templating_lib %>"
+gem "<%= @markup_lib %>"
 gem_group :development do
-  gem "<%= @templating_lib %>-rails"
+  gem "<%= @markup_lib %>-rails"
 end
 
 remove_file "app/views/layouts/application.html.erb"
