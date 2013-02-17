@@ -1,7 +1,7 @@
 # Rails-Application Template composed of:
-# - Haml
-# - Twitter-Bootrap-Rails
-# - Unicorn
+# - haml
+# - twitter-bootrap-rails
+# - unicorn
 
 gem 'unicorn'
 
