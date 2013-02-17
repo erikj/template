@@ -1,0 +1,22 @@
+# Rails-Application Template composed of:
+# - <%= @templating_lib %>
+# - twitter-bootrap-rails
+# - unicorn
+
+gem 'unicorn'
+
+gem "<%= @templating_lib %>"
+gem_group :development do
+  gem "<%= @templating_lib %>-rails"
+end
+
+remove_file "app/views/layouts/application.html.erb"
+
+gem_group :assets do
+  gem 'twitter-bootstrap-rails'
+end
+
+run 'bundle install'
+
+generate "bootstrap:install", "static"
+generate "bootstrap:layout", "application", "fluid"
