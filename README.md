@@ -2,7 +2,7 @@
 
 ## About
 
-**HAML-Bootstrap Template** is a Ruby-on-Rails application template, for creating Ruby-on-Rail applications configured w/:
+**HAML-Bootstrap Template** is a **Ruby-on-Rails** application template, for creating **Ruby-on-Rail** applications configured w/:
 
 - [**HAML**](http://haml.info/) markup language
 - [**Twitter Bootstrap for Rails 3.1 Asset Pipeline**](https://github.com/seyhunak/twitter-bootstrap-rails)
@@ -10,7 +10,7 @@
 
 ## Usage
 
-Create a new Ruby-on-Rails application:
+Create a new **Ruby-on-Rails** application:
 
     % rails new APPNAME -m http://erikj.github.com/hamltbs/template.rb
 
