@@ -10,7 +10,7 @@
 
 ## Usage
 
-Create a new **Ruby-on-Rails** application:
+Create a new **Ruby-on-Rails** application and apply this template:
 
     % rails new APPNAME -m http://erikj.github.com/hamltbs/template.rb
 
