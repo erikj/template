@@ -13,5 +13,7 @@ gem_group :assets do
   gem 'twitter-bootstrap-rails'
 end
 
+run 'bundle install'
+
 generate "bootstrap:install", "static"
 generate "bootstrap:layout", "application", "fluid"
