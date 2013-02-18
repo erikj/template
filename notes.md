@@ -19,14 +19,15 @@
     - <https://github.com/github/gitignore/blob/master/Rails.gitignore>
   - `.gitignore`s in proper directories:
     - `log/`
+    - `tmp/cache/assets/`
+
+    ```
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
+```
+
   - `git init .`
   - `git add .`
   - `git commit -m 'initializing new Rails application'`
-- shorter URL:
-  - <https://github.com/blog/985-git-io-github-url-shortener>
-    - **nein!!!** :(
-      > redirection forbidden: http://git.io/xoLBxQ -> https://raw.github.com/erikj/haml-bootstrap-template/master/haml-bootstrap.rb (RuntimeError)
-  - gh-pages?
-    - rename repo: `hamltbs`
-    - `http://erikj.github.com/hamltbs/t.rb`
-    - switch default branch from `master` to `gh-pages`
