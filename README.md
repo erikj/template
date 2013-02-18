@@ -29,12 +29,24 @@ The provided application templates are generated from a template via a [**Thor**
 To modify the provided application templates:
 
 - Edit template template as needed:
-  - `% emacs templates/template_template.erb`
+
+  ```
+  % emacs templates/template_template.erb
+  ```
+
 - Generate new template:
-  - Slim:
-    - `% thor template:create --force stb`
-  - Haml:
-    - `% thor template:create --force htb`
+
+  - **Haml**:
+
+    ```
+    % thor template:create htb
+    ```
+
+  - **Slim**:
+
+    ```
+    % thor template:create stb
+    ```
 
 ## Requirements
 
