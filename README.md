@@ -2,7 +2,7 @@
 
 ## About
 
-**Templates** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
+**[templates](https://github.com/erikj/templates)** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
 
 - markup language:
   - [**Haml**](http://haml.info/)
@@ -24,20 +24,49 @@ Create a new **Ruby-on-Rails** application composed w/ available template:
 
 ### Development
 
-The provided application templates are generated from a template via a [Thor](https://github.com/wycats/thor/wiki) task.
+The provided application templates are generated from a template via a [**Thor**](https://github.com/wycats/thor/wiki) task, `template:create`.
 
 To modify the provided application templates:
 
 - Edit template template as needed:
-  - `% emacs templates/template_template.erb`
+
+  ```
+  % emacs templates/template_template.erb
+  ```
+
 - Generate new template:
-  - Slim: `% thor template:create --force stb`
-  - Haml: `% thor template:create --force htb`
+
+  - **Haml**:
+
+    ```
+    % thor template:create htb
+    ```
+
+  - **Slim**:
+
+    ```
+    % thor template:create stb
+    ```
+
+## Requirements
+
+### Usage
+
+Using the provided templates requires:
+
+- [**Ruby**](http://ruby-lang.org)
+- [**RubyGems**](http://rubygems.org)
+- [**Rails**](http://rubyonrails.org)
+
+### Development
+
+Development of **templates** requires the dependencies listed above, and:
+
+- [**Thor**](https://github.com/wycats/thor)
 
 ## Background
 
-- [**Ruby on Rails:** Web development that doesn't hurt](http://rubyonrails.org/)
-- [Rails Application Templates](http://guides.rubyonrails.org/rails_application_templates.html)
+- [**Rails Application Templates**](http://guides.rubyonrails.org/rails_application_templates.html)
 - [**Primo:** A configurable default Rails stack](https://github.com/cbetta/primo)
 - [**Twitter Bootstrap**](http://twitter.github.com/bootstrap/)  CSS / JS framework
 
