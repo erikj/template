@@ -2,7 +2,7 @@
 
 ## About
 
-**Templates** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
+**[templates](https://github.com/erikj/templates)** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
 
 - markup language:
   - [**Haml**](http://haml.info/)
