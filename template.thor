@@ -5,7 +5,7 @@ class Template < Thor
   method_options :force => :boolean
   def create name
 
-    if name != 'templates' and (name=='stb' or name=='htb')
+    if name=='stb' or name=='htb'
       dest_file = "#{name}.rb"
       @markup_lib = name=='stb' ? 'slim' : 'haml'
       puts "Creating app template #{dest_file}"
