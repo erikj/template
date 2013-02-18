@@ -66,7 +66,7 @@ Development of **templates** requires the dependencies listed above, and:
 
 ## Background
 
-- [Rails Application Templates](http://guides.rubyonrails.org/rails_application_templates.html)
+- [**Rails Application Templates**](http://guides.rubyonrails.org/rails_application_templates.html)
 - [**Primo:** A configurable default Rails stack](https://github.com/cbetta/primo)
 - [**Twitter Bootstrap**](http://twitter.github.com/bootstrap/)  CSS / JS framework
 
