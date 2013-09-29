@@ -1,10 +1,6 @@
 # TODO:
 # - consolidate other templates herein via responses to questions
 
-#   - 'would you like to specify an application server, ie. unicorn, thin or puma?'
-#     - if yes
-#       - ask('unicorn, thin or puma?')
-
 APPLICATION_LAYOUT_PREFIX = 'app/views/layouts/application.html'
 
 def remove_erb_layout()
@@ -14,6 +10,7 @@ end
 def generate_layout(templating_system)
   case templating_system
   when 'slim'
+    # populate application layout w/ Slim
 
     file "#{APPLICATION_LAYOUT_PREFIX}.slim", <<-EOF.gsub(/^ {6}/, '')
       doctype
@@ -28,7 +25,7 @@ def generate_layout(templating_system)
     EOF
 
   when 'haml'
-  # populate application layout w/ Haml
+    # populate application layout w/ Haml
     file "#{APPLICATION_LAYOUT_PREFIX}.haml", <<-EOF.gsub(/^ {6}/, '')
       !!!
       %html
@@ -43,6 +40,7 @@ def generate_layout(templating_system)
   end
 end
 
+# application server
 
 if yes?('would you like to specify an application server, ie. unicorn, thin or puma?')
 
@@ -51,19 +49,13 @@ if yes?('would you like to specify an application server, ie. unicorn, thin or p
 
 end
 
-#   - markup other than ERB?
-#     - if yes?
+# non-ERB templating system
 
 if yes?('would you like to use a templating system other than ERB, ie. slim or haml?')
 
-  #       - slim or haml?
   templating_system = ask('slim or haml?')
 
   if templating_system == 'slim'
-  	#         - if slim
-  	#           - gem 'slim/-rails'
-  	#           - remove_erb_layout()
-  	#           - generate_layout('slim')
   	gem 'slim'
   	gem_group :development do
   	  gem 'slim-rails'
@@ -72,10 +64,6 @@ if yes?('would you like to use a templating system other than ERB, ie. slim or h
   	generate_layout('slim')
 
   elsif templating_system == 'haml'
-  	#         - elsif haml
-  	#           - gem 'haml/-rails'
-  	#           - remove_erb_layout()
-  	#           - generate_layout('haml')
     gem 'haml'
     gem_group :development do
       gem 'haml-rails'
