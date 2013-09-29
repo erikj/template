@@ -16,15 +16,15 @@ def generate_layout(templating_system)
   when 'slim'
 
     file "#{APPLICATION_LAYOUT_PREFIX}.slim", <<-EOF.gsub(/^ {6}/, '')
-	  doctype
-	  html
-	    head
-	      title #{app_name.humanize}
-          = stylesheet_link_tag    'application', :media => 'all'
-          = javascript_include_tag 'application'
-          = csrf_meta_tags
-  	  body
-  	    = yield
+      doctype
+      html
+        head
+          title #{app_name.humanize}
+            = stylesheet_link_tag    'application', :media => 'all'
+            = javascript_include_tag 'application'
+            = csrf_meta_tags
+      body
+        = yield
     EOF
 
   when 'haml'
