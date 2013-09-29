@@ -39,7 +39,7 @@ def generate_layout(templating_system)
           = csrf_meta_tags
         %body
           = yield
-      EOF
+    EOF
   end
 end
 
