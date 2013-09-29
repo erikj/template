@@ -23,8 +23,8 @@ def generate_layout(templating_system)
             = stylesheet_link_tag    'application', :media => 'all'
             = javascript_include_tag 'application'
             = csrf_meta_tags
-      body
-        = yield
+        body
+          = yield
     EOF
 
   when 'haml'
@@ -80,6 +80,7 @@ if yes?('would you like to use a templating system other than ERB, ie. slim or h
     gem_group :development do
       gem 'haml-rails'
     end
+    remove_erb_layout()
     generate_layout('haml')
   end
 end
