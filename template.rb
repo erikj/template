@@ -5,15 +5,17 @@
 #     - if yes
 #       - ask('unicorn, thin or puma?')
 
+APPLICATION_LAYOUT_PREFIX = 'app/views/layouts/application.html'
+
 def remove_erb_layout()
-  remove_file 'app/views/layouts/application.html.erb'
+  remove_file "#{APPLICATION_LAYOUT_PREFIX}.erb"
 end
 
 def generate_layout(templating_system)
   case templating_system
   when 'slim'
 
-    file 'app/views/layouts/application.html.slim', <<-EOF.gsub(/^ {6}/, '')
+    file "#{APPLICATION_LAYOUT_PREFIX}.slim", <<-EOF.gsub(/^ {6}/, '')
 	  doctype
 	  html
 	    head
@@ -27,7 +29,7 @@ def generate_layout(templating_system)
 
   when 'haml'
   # populate application layout w/ Haml
-    file 'app/views/layouts/application.html.haml', <<-EOF.gsub(/^ {6}/, '')
+    file "#{APPLICATION_LAYOUT_PREFIX}.haml", <<-EOF.gsub(/^ {6}/, '')
       !!!
       %html
         %head
