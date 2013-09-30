@@ -22,7 +22,7 @@ Create a new **Ruby-on-Rails** application composed w/ available template:
 You will then be asked queried for your choices of:
 
 - application server:
-  - **WeBRICK** (default)
+  - **WEBrick** (default)
   - **puma**
   - **thin**
   - **unicorn**
