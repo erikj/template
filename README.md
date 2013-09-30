@@ -9,8 +9,8 @@
   - [**Slim**](http://slim-lang.com/)
 - [**Twitter Bootstrap for Rails 3.1 Asset Pipeline**](https://github.com/seyhunak/twitter-bootstrap-rails)
 - application server
-  - [**Puma**](http://puma.io/)
-  - [**Unicorn**](http://unicorn.bogomips.org/) Rack HTTP server
+  - [**Puma**](http://puma.io/):  A modern, concurrent web server for Ruby
+  - [**Unicorn**](http://unicorn.bogomips.org/): Rack HTTP server for fast clients and Unix
 
 ## Usage
 
