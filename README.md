@@ -2,7 +2,7 @@
 
 ## About
 
-**[templates](https://github.com/erikj/templates)** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
+**[templates](https://github.com/erikj/templates)** is **Ruby-on-Rails** application template, for creating **Ruby-on-Rail** applications configured w/:
 
 - markup language:
   - [**Haml**](http://haml.info/)
@@ -14,55 +14,29 @@
 
 Create a new **Ruby-on-Rails** application composed w/ available template:
 
-### Haml Twitter Bootstrap
+    % rails new APPNAME -m http://erikj.github.com/templates/template.rb
 
-    % rails new APPNAME -m http://erikj.github.com/templates/htb.rb
+You will then be asked queried for your choices of:
 
-### Slim Twitter Bootstrap
-
-    % rails new APPNAME -m http://erikj.github.com/templates/stb.rb
-
-### Development
-
-The provided application templates are generated from a template via a [**Thor**](https://github.com/wycats/thor/wiki) task, `template:create`.
-
-To modify the provided application templates:
-
-- Edit template template as needed:
-
-  ```
-  % emacs templates/template_template.erb
-  ```
-
-- Generate new template:
-
-  - **Haml**:
-
-    ```
-    % thor template:create htb
-    ```
-
-  - **Slim**:
-
-    ```
-    % thor template:create stb
-    ```
+- application server:
+  - WeBRICK (default)
+  - puma
+  - thin
+  - unicorn
+- template engine
+  - ERB (default)
+  - slim
+  - haml
+- Bootstrap CSS/JS framework
+- running `bundle install` to install gems
 
 ## Requirements
 
-### Usage
-
-Using the provided templates requires:
+Using the provided template requires:
 
 - [**Ruby**](http://ruby-lang.org)
 - [**RubyGems**](http://rubygems.org)
 - [**Rails**](http://rubyonrails.org)
-
-### Development
-
-Development of **templates** requires the dependencies listed above, and:
-
-- [**Thor**](https://github.com/wycats/thor)
 
 ## Background
 
