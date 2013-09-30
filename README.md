@@ -2,7 +2,7 @@
 
 ## About
 
-**[Template](https://github.com/erikj/template)** is a **Ruby-on-Rails** application template, for creating **Ruby-on-Rail** applications configured w/:
+**[Template](https://github.com/erikj/template)** is a **Ruby-on-Rails** application template, for creating **Ruby-on-Rails** applications configured w/:
 
 - markup language:
   - [**Haml**](http://haml.info/)
