@@ -1,68 +1,45 @@
-# Templates
+# Template
 
 ## About
 
-**[templates](https://github.com/erikj/templates)** is a set of **Ruby-on-Rails** application templates, for creating **Ruby-on-Rail** applications configured w/:
+**[Template](https://github.com/erikj/template)** is a **Ruby-on-Rails** application template, for creating **Ruby-on-Rails** applications configured w/:
 
 - markup language:
   - [**Haml**](http://haml.info/)
   - [**Slim**](http://slim-lang.com/)
 - [**Twitter Bootstrap for Rails 3.1 Asset Pipeline**](https://github.com/seyhunak/twitter-bootstrap-rails)
-- [**Unicorn**](http://unicorn.bogomips.org/) Rack HTTP server
+- application server:
+  - [**Thin**](http://code.macournoyer.com/thin/): *Ruby web server that glues together three of the best Ruby libraries in web history: Mongrel parser, EventMachine and Rack*
+  - [**Puma**](http://puma.io/):  *modern, concurrent web server for Ruby*
+  - [**Unicorn**](http://unicorn.bogomips.org/): *Rack HTTP server for fast clients and Unix*
 
 ## Usage
 
 Create a new **Ruby-on-Rails** application composed w/ available template:
 
-### Haml Twitter Bootstrap
+    % rails new APPNAME -m http://erikj.github.io/template/template.rb
 
-    % rails new APPNAME -m http://erikj.github.com/templates/htb.rb
+You will then be asked queried for your choices of:
 
-### Slim Twitter Bootstrap
-
-    % rails new APPNAME -m http://erikj.github.com/templates/stb.rb
-
-### Development
-
-The provided application templates are generated from a template via a [**Thor**](https://github.com/wycats/thor/wiki) task, `template:create`.
-
-To modify the provided application templates:
-
-- Edit template template as needed:
-
-  ```
-  % emacs templates/template_template.erb
-  ```
-
-- Generate new template:
-
-  - **Haml**:
-
-    ```
-    % thor template:create htb
-    ```
-
-  - **Slim**:
-
-    ```
-    % thor template:create stb
-    ```
+- application server:
+  - **WeBRICK** (default)
+  - **puma**
+  - **thin**
+  - **unicorn**
+- template engine
+  - **ERB** (default)
+  - **Slim**
+  - **Haml**
+- **Bootstrap** CSS/JS framework
+- running `bundle install` to install gems
 
 ## Requirements
 
-### Usage
-
-Using the provided templates requires:
+Using the provided template requires:
 
 - [**Ruby**](http://ruby-lang.org)
 - [**RubyGems**](http://rubygems.org)
 - [**Rails**](http://rubyonrails.org)
-
-### Development
-
-Development of **templates** requires the dependencies listed above, and:
-
-- [**Thor**](https://github.com/wycats/thor)
 
 ## Background
 
@@ -72,4 +49,4 @@ Development of **templates** requires the dependencies listed above, and:
 
 ## License
 
-**MIT [LICENSE](https://github.com/erikj/templates/blob/gh-pages/LICENSE)**
+**MIT [LICENSE](https://github.com/erikj/template/blob/gh-pages/LICENSE)**
