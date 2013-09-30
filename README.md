@@ -9,9 +9,9 @@
   - [**Slim**](http://slim-lang.com/)
 - [**Twitter Bootstrap for Rails 3.1 Asset Pipeline**](https://github.com/seyhunak/twitter-bootstrap-rails)
 - application server:
-  - [**Thin**](http://code.macournoyer.com/thin/): *a Ruby web server that glues together three of the best Ruby libraries in web history: Mongrel parser, EventMachine and Rack*
-  - [**Puma**](http://puma.io/):  A modern, concurrent web server for Ruby
-  - [**Unicorn**](http://unicorn.bogomips.org/): Rack HTTP server for fast clients and Unix
+  - [**Thin**](http://code.macournoyer.com/thin/): *Ruby web server that glues together three of the best Ruby libraries in web history: Mongrel parser, EventMachine and Rack*
+  - [**Puma**](http://puma.io/):  *modern, concurrent web server for Ruby*
+  - [**Unicorn**](http://unicorn.bogomips.org/): *Rack HTTP server for fast clients and Unix*
 
 ## Usage
 
