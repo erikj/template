@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'thor'
+gem 'rails', '4.0.0'
