@@ -3,6 +3,10 @@
 
 APPLICATION_LAYOUT_PREFIX = 'app/views/layouts/application.html'
 
+def bundle_install
+  run 'bundle install --path=vendor'
+end
+
 def remove_erb_layout()
   remove_file "#{APPLICATION_LAYOUT_PREFIX}.erb"
 end
@@ -64,14 +68,22 @@ if yes?('would you like to use a template engine other than ERB, ie. slim or ham
 
 end
 
+bundled = false
 
-#   - bootstrap?
-#     - if yes
-#       - gem 'twitter-bootstrap-rails'
-#       - initialize twitter bootstrap? ('bundle install' will be run)
-#         - if yes
-#           - generate 'bootstrap:install', 'static'
-#           - generate 'bootstrap:layout', 'application', 'fluid'
-#   - run bundle install?
-#     - if yes
-#       - run 'bundle install'
+# bootstrap
+if yes?('install the Bootstrap CSS/JS framework via twitter-bootstrap-rails?')
+  gem 'twitter-bootstrap-rails'
+  if yes?('initialize twitter bootstrap? (`bundle install` will be run)?')
+    bundle_install
+    bundled = true
+    generate 'bootstrap:install', 'static'
+    generate 'bootstrap:layout', 'application', 'fluid'
+  end
+end
+
+# bundle
+unless bundled
+  if yes?('run `bundle install` to install gems?')
+    bundle_install
+  end
+end
