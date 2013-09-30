@@ -8,7 +8,9 @@
   - [**Haml**](http://haml.info/)
   - [**Slim**](http://slim-lang.com/)
 - [**Twitter Bootstrap for Rails 3.1 Asset Pipeline**](https://github.com/seyhunak/twitter-bootstrap-rails)
-- [**Unicorn**](http://unicorn.bogomips.org/) Rack HTTP server
+- application server
+  - [**Puma**](http://puma.io/)
+  - [**Unicorn**](http://unicorn.bogomips.org/) Rack HTTP server
 
 ## Usage
 
