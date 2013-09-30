@@ -21,15 +21,15 @@ Create a new **Ruby-on-Rails** application composed w/ available template:
 You will then be asked queried for your choices of:
 
 - application server:
-  - WeBRICK (default)
-  - puma
-  - thin
-  - unicorn
+  - **WeBRICK** (default)
+  - **puma**
+  - **thin**
+  - **unicorn**
 - template engine
-  - ERB (default)
-  - slim
-  - haml
-- Bootstrap CSS/JS framework
+  - **ERB** (default)
+  - **Slim**
+  - **Haml**
+- **Bootstrap** CSS/JS framework
 - running `bundle install` to install gems
 
 ## Requirements
