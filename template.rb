@@ -7,8 +7,14 @@ def remove_erb_layout()
   remove_file "#{APPLICATION_LAYOUT_PREFIX}.erb"
 end
 
-def generate_layout(templating_system)
-  case templating_system
+def use_engine template_engine
+  gem template_engine
+  gem_group :development do
+    gem "#{template_engine}-rails"
+  end
+  remove_erb_layout()
+
+  case template_engine
   when 'slim'
     # populate application layout w/ Slim
 
@@ -49,28 +55,13 @@ if yes?('would you like to specify an application server, ie. unicorn, thin or p
 
 end
 
-# non-ERB templating system
+# non-ERB template engine
 
-if yes?('would you like to use a templating system other than ERB, ie. slim or haml?')
+if yes?('would you like to use a template engine other than ERB, ie. slim or haml?')
 
-  templating_system = ask('slim or haml?')
+  template_engine = ask('slim or haml?')
+  use_engine template_engine
 
-  if templating_system == 'slim'
-  	gem 'slim'
-  	gem_group :development do
-  	  gem 'slim-rails'
-  	end
-  	remove_erb_layout()
-  	generate_layout('slim')
-
-  elsif templating_system == 'haml'
-    gem 'haml'
-    gem_group :development do
-      gem 'haml-rails'
-    end
-    remove_erb_layout()
-    generate_layout('haml')
-  end
 end
 
 
