@@ -53,40 +53,45 @@ def use_engine template_engine
   end
 end
 
-# application server
+def run_template
 
-if yes?('would you like to specify an application server, ie. unicorn, thin or puma?')
+  # application server
 
-  application_server = ask('unicorn, thin or puma?')
-  gem application_server
+  if yes?('would you like to specify an application server, ie. unicorn, thin or puma?')
 
-end
+    application_server = ask('unicorn, thin or puma?')
+    gem application_server
 
-# non-ERB template engine
+  end
 
-if yes?('would you like to use a template engine other than ERB, ie. slim or haml?')
+  # non-ERB template engine
 
-  template_engine = ask('slim or haml?')
-  use_engine template_engine
+  if yes?('would you like to use a template engine other than ERB, ie. slim or haml?')
 
-end
+    template_engine = ask('slim or haml?')
+    use_engine template_engine
 
-bundled = false
+  end
 
-# bootstrap
-if yes?('install the Bootstrap CSS/JS framework via twitter-bootstrap-rails?')
-  gem 'twitter-bootstrap-rails'
-  if yes?('initialize twitter bootstrap? (`bundle install` will be run)?')
-    bundle_install
-    bundled = true
-    generate 'bootstrap:install', 'static'
-    generate 'bootstrap:layout', 'application', 'fluid'
+  bundled = false
+
+  # bootstrap
+  if yes?('install the Bootstrap CSS/JS framework via twitter-bootstrap-rails?')
+    gem 'twitter-bootstrap-rails'
+    if yes?('initialize twitter bootstrap? (`bundle install` will be run)?')
+      bundle_install
+      bundled = true
+      generate 'bootstrap:install', 'static'
+      generate 'bootstrap:layout', 'application', 'fluid'
+    end
+  end
+
+  # bundle
+  unless bundled
+    if yes?('run `bundle install` to install gems?')
+      bundle_install
+    end
   end
 end
 
-# bundle
-unless bundled
-  if yes?('run `bundle install` to install gems?')
-    bundle_install
-  end
-end
+run_template()
