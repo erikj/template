@@ -1,5 +1,8 @@
-# TODO:
-# - consolidate other templates herein via responses to questions
+# Rails Application Template
+# see https://github.com/erikj/template for further information and LICENSE
+
+# USAGE:
+# % rails new APPNAME -m http://erikj.github.io/template/template.rb
 
 APPLICATION_LAYOUT_PREFIX = 'app/views/layouts/application.html'
 
