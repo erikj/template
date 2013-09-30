@@ -14,7 +14,7 @@
 
 Create a new **Ruby-on-Rails** application composed w/ available template:
 
-    % rails new APPNAME -m http://erikj.github.com/templates/template.rb
+    % rails new APPNAME -m http://erikj.github.io/templates/template.rb
 
 You will then be asked queried for your choices of:
 
