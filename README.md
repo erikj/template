@@ -1,8 +1,8 @@
-# Templates
+# Template
 
 ## About
 
-**[templates](https://github.com/erikj/templates)** is **Ruby-on-Rails** application template, for creating **Ruby-on-Rail** applications configured w/:
+**[Template](https://github.com/erikj/template)** is a **Ruby-on-Rails** application template, for creating **Ruby-on-Rail** applications configured w/:
 
 - markup language:
   - [**Haml**](http://haml.info/)
@@ -14,7 +14,7 @@
 
 Create a new **Ruby-on-Rails** application composed w/ available template:
 
-    % rails new APPNAME -m http://erikj.github.io/templates/template.rb
+    % rails new APPNAME -m http://erikj.github.io/template/template.rb
 
 You will then be asked queried for your choices of:
 
@@ -46,4 +46,4 @@ Using the provided template requires:
 
 ## License
 
-**MIT [LICENSE](https://github.com/erikj/templates/blob/gh-pages/LICENSE)**
+**MIT [LICENSE](https://github.com/erikj/template/blob/gh-pages/LICENSE)**
