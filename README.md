@@ -5,11 +5,13 @@
 **[Template](https://github.com/erikj/template)** is a **Ruby-on-Rails** application template, for creating **Ruby-on-Rails** applications configured w/:
 
 - application server:
+  - [**WEBrick** (default)](http://ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick.html)
   - [**Thin**](http://code.macournoyer.com/thin/): *Ruby web server that glues together three of the best Ruby libraries in web history: Mongrel parser, EventMachine and Rack*
   - [**Puma**](http://puma.io/):  *modern, concurrent web server for Ruby*
   - [**Unicorn**](http://unicorn.bogomips.org/): *Rack HTTP server for fast clients and Unix*
 
 - templating system:
+  - [**ERB** (default)](http://ruby-doc.org/stdlib-2.0.0/libdoc/erb/rdoc/ERB.html)
   - [**Haml**](http://haml.info/)
   - [**Slim**](http://slim-lang.com/)
 
