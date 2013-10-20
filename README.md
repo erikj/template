@@ -45,7 +45,7 @@ You will then be queried for your choices of:
 
 Using the provided template requires:
 
-- [**Ruby**](http://ruby-lang.org)
+- [**Ruby**](http://ruby-lang.org) (`>= 1.9`)
 - [**RubyGems**](http://rubygems.org)
 - [**Rails**](http://rubyonrails.org)
 
