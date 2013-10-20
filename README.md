@@ -52,6 +52,8 @@ Using the provided template requires:
 ## Background
 
 - [**Rails Application Templates**](http://guides.rubyonrails.org/rails_application_templates.html)
+- [Rails Is Omakase - DHH](http://david.heinemeierhansson.com/2012/rails-is-omakase.html)
+- [Rails Has Two Stacks - Klabnik](http://words.steveklabnik.com/rails-has-two-default-stacks)
 - [**Primo:** A configurable default Rails stack](https://github.com/cbetta/primo)
 - [**Twitter Bootstrap**](http://twitter.github.com/bootstrap/)  CSS / JS framework
 
