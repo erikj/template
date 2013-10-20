@@ -22,7 +22,7 @@ Create a new **Ruby-on-Rails** application composed w/ Template:
 
     % rails new APPNAME -m http://erikj.github.io/template/template.rb
 
-You will then be asked queried for your choices of:
+You will then be queried for your choices of:
 
 - application server:
   - **WEBrick** (default)
